@@ -5,7 +5,7 @@ class Store(models.Model):
     name = models.CharField(max_length=100)
     category = models.CharField(max_length=25) 
     is_open = models.BooleanField(default=False)
-    image = models.FileField()
+    image = models.FileField(upload_to='media/', blank=True)
     is_delivering = models.BooleanField(default=False)
 
     def __str__(self):

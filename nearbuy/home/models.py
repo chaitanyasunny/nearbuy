@@ -8,7 +8,7 @@ class Store(models.Model):
     is_open = models.BooleanField(default=False)
     image = models.FileField(upload_to='home/storeimages', blank=True)
     is_delivering = models.BooleanField(default=False)
-    created_at = models.DateTimeField(default=datetime.now)
+    created_at = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.name

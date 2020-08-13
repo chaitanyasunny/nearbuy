@@ -138,7 +138,7 @@
 </div>
 <div class="container">
         <!-- Iterate over object_list -->
-        {% for store in all_stores %} 
+        {%if store %} 
 
         <!-- Display Objects -->
         <div class="card">
@@ -186,11 +186,7 @@
             </p>
             <p><button>Order</button></p>
         </div>
-
-        <!-- If store_list is empty  -->
-        {% empty %} 
-        <li>No Stores nearby yet.</li> 
-        {% endfor %} 
+        {% endif %} 
     </ul>
     <p>                          
         <div style="margin: 24px 0;">

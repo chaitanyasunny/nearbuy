@@ -74,6 +74,8 @@
         button:hover, a:hover {
           opacity: 0.5;
         }
+        .checked {
+          color: gold;
         </style>
 </head>
 <body>
@@ -146,6 +148,13 @@
             </p>
             {% endif %}
             <p>{{ store.created_at}}</p>
+            <p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
             <p><button>Order</button></p>
         </div>
 

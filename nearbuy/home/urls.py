@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register('storeapi', StoreViewSet, 'store_api')
 
 urlpatterns = [
-    path('stores', StoreView.as_view() ), 
+    path('stores', StoreView.as_view(), name='allstores'), 
     
 ]
 urlpatterns += router.urls

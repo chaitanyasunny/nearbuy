@@ -1,0 +1,1 @@
+venv: C:\Users\chait\.virtualenvs\nearbuy-FldwkX-t\Scripts

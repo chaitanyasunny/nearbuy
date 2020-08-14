@@ -184,8 +184,11 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
             </p>
-            <p><button>Order</button></p>
+            <p>
+              <a href="{% url 'store-detail' store.pk %}" class="btn btn-success stretched-link">Order</a>
+            </p>
         </div>
+        <br>
 
         <!-- If store_list is empty  -->
         {% empty %} 
